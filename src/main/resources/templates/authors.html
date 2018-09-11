@@ -1,0 +1,32 @@
+<!--
+  ~ Created by Eduardo Studzinski Estima de Castro - 11/9/2018.
+  ~
+  -->
+
+<!--
+  ~ Created by Eduardo Studzinski Estima de Castro - 11/9/2018.
+  ~
+  -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Eduardo - Training</title>
+</head>
+<body>
+<h1>Author List</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Full name</th>
+    </tr>
+    <tr th:each="author : ${authors}">
+        <td th:text="${author.id}">123</td>
+        <td th:text="${author.firstName + ' ' + author.lastName}">FName LName</td>
+    </tr>
+</table>
+
+</body>
+</html>
